@@ -82,6 +82,21 @@ section {
   letter-spacing: -0.5px;
 }
 
+.chinese-name {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--text-light);
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.pronunciation {
+  font-size: 0.8rem;
+  color: var(--text-lighter);
+  margin-left: 6px;
+  font-style: italic;
+}
+
 .tagline {
   font-family: var(--font-sans);
   font-size: 15px;
