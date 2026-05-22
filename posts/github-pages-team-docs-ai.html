@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to build a GitHub Pages site for team docs with AI — Yuzhu Zhang</title>
+  <meta name="description" content="How I built a GitHub Pages documentation hub for my data team in 30 minutes using Claude Code — including real automation examples." />
+  <meta property="og:title" content="How to build a GitHub Pages site for team docs with AI" />
+  <meta property="og:description" content="How I built a GitHub Pages documentation hub for my data team in 30 minutes using Claude Code — including real automation examples." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://yuzhuz.github.io/posts/github-pages-team-docs-ai.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@yuzhu_z" />
+  <link rel="canonical" href="https://yuzhuz.github.io/posts/github-pages-team-docs-ai.html" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html" class="site-name">Yuzhu Zhang</a>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog.html" class="active">Writing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post-content">
+      <h1>How to build a GitHub Pages site for team docs with AI</h1>
+      <p class="post-meta">2026-05-22</p>
+
+      <h2>The problem</h2>
+
+      <p>Our team used to document in Confluence. Recently the company decided to drop it. But honestly, Confluence was already failing us before that — information scattered across pages no one updated, outdated docs that were more misleading than helpful, and a tool that made editing feel like enough work that people just didn't bother.</p>
+
+      <p>As a data team, we had some documentation covered: technical specs lived in GitHub, metadata about tables and models lived in Unity Catalog of our data warehouse. But everything else — metrics definitions, roadmap, dashboard inventory, how-to guides for stakeholders — had no home. We needed a hub.</p>
+
+      <h2>The solution</h2>
+
+      <p>I built a GitHub Pages site for the Pro data team in about 30 minutes using Claude Code. No HTML knowledge required. No web developer involved. It has been live since, and the team uses it as their primary reference.</p>
+
+      <p>Why GitHub Pages works well for this:</p>
+      <ul>
+        <li>One permanent URL</li>
+        <li>Free to host, version-controlled by default</li>
+        <li>Engineers already trust GitHub — it fits naturally into how the team works</li>
+      </ul>
+
+      <h2>How to do it</h2>
+
+      <p><strong>1. Start with structure, not content.</strong> Before writing a single page, talk to Claude Code about what the site needs. Share your existing Confluence structure, describe your team's use cases, and let it propose a site map.</p>
+
+      <p>Here's what our actual site map looks like:</p>
+
+      <pre>Pro Data Hub
+├── Dashboards
+│   ├── Business Monitoring
+│   ├── Sales Monitoring
+│   ├── Scorecard
+│   ├── Marketing
+│   ├── Funnel View
+│   └── User DNA &amp; Behaviour
+├── Knowledge Base
+│   ├── Metrics Definitions
+│   ├── Table Reference
+│   ├── Architecture
+│   └── Genie Guide
+├── Roadmaps
+├── News
+└── Team</pre>
+
+      <p>Agree on the structure before building anything — changing the navigation later is easy, but starting without a clear map means you'll be reorganising content before you've even filled it.</p>
+
+      <p><strong>2. Pick a template.</strong> Claude Code can suggest one based on your needs, or you can describe what you want. Keep it simple — clear navigation and readable pages matter more than design.</p>
+
+      <p><strong>3. Let Claude Code set up the repo and the site.</strong> It creates the GitHub repository, scaffolds the pages, and configures GitHub Pages. You review and approve. This is the part that used to require a developer.</p>
+
+      <p><strong>4. Feed it content and adjust.</strong> Paste in your existing documentation (Confluence pages, Google Slides, PDFs, Google Sheets, Google Docs), define a template for the content, and iterate. You make the decisions; Claude handles the formatting and file structure.</p>
+
+      <p><strong>5. Add automation.</strong> This is where it gets genuinely useful — and where I spent most of my time. Two examples from our setup:</p>
+
+      <p><strong>Dashboard inventory synced from a Google Sheet.</strong> We maintain a spreadsheet tracking all our dashboards — name, owner, status, development stage, link. A GitHub Action runs every Monday morning, reads the sheet, and rewrites the dashboards page with the latest information. Status tags (Live, In Progress, Planned) update automatically. No manual HTML editing required.</p>
+
+      <p><strong>Data model updates synced from Slack.</strong> When our data engineers post updates to a specific Slack channel — table deprecations, schema changes, migration notices — a daily GitHub Action picks up those messages, parses them, and adds formatted entries to a news page on the site. Stakeholders can check the site instead of digging through Slack history.</p>
+
+      <p>Neither automation required me to write the logic from scratch. I described what I wanted, Claude Code wrote it, I tested it and made small adjustments.</p>
+
+      <p><strong>6. Share and collect feedback.</strong> Send the link to colleagues. The barrier to giving feedback on a clean webpage is much lower than on a Confluence page.</p>
+
+      <h2>Honest challenges</h2>
+
+      <p><strong>GitHub access.</strong> Not everyone in my company has GitHub access by default. In practice this is easy to solve — access can be granted quickly, and most companies already have a process for it.</p>
+
+      <p><strong>The jungle problem.</strong> If every team does this independently, we end up with dozens of disconnected GitHub Pages sites with no shared structure. The real answer is to agree on a hierarchy: company wiki, domain wiki, function wiki. Without that, you're moving the Confluence mess to a new address. But agreement at an organisational level takes time and requires the right people to drive it. Our solution: build the site now, and when a company or department agreement is in place, migrate the content to the future repo. Claude Code makes that migration straightforward.</p>
+
+      <p><strong>Maintenance and contribution.</strong> How do you make people actively contribute? Easiness is the key. The more you can remove friction — through automation, through simple templates, through AI-assisted editing for non-technical colleagues — the more the site stays alive. I have more ideas on this; will share in a future post.</p>
+
+      <h2>Closing</h2>
+
+      <p>Documentation fails not because people don't care, but because the cost of maintaining it is always higher than the urgency of doing it. A static site built with AI doesn't eliminate that cost — but it lowers it significantly. Automation handles the most repetitive parts. A clear structure makes contributing feel less daunting. And when something needs to change, it takes minutes rather than a Jira ticket.</p>
+
+      <p>If your team is post-Confluence and looking for a new home for your docs, this is a practical starting point. It took an afternoon to build. The team has been using it ever since.</p>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Yuzhu Zhang · Berlin</p>
+  </footer>
+
+</body>
+</html>
