@@ -4,22 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yuzhu Zhang — Data Product Consultant & AI Enablement | Berlin</title>
-  <meta name="description" content="Yuzhu Zhang is a data product consultant and AI enablement practitioner based in Berlin. She helps teams adopt AI tools, build data fluency, and turn data into useful products." />
-  <meta name="keywords" content="Yuzhu Zhang, data product consultant, AI enablement, data product management, product strategy, AI workshops, data fluency, Berlin" />
+  <meta name="description" content="Yuzhu Zhang is a Senior Data Product Manager and consultant based in Berlin. She helps teams adopt AI tools, build data products, and turn data into business impact." />
+  <meta name="keywords" content="Yuzhu Zhang, data product consultant, AI enablement, data product management, product strategy, AI workshops, data fluency, Berlin, Kleinanzeigen" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Yuzhu Zhang — Data Product Consultant & AI Enablement" />
   <meta property="og:description" content="Helping teams adopt AI tools, build data fluency, and turn data into useful products. Based in Berlin." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yuzhuz.github.io" />
-
-  <!-- Twitter/X Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@yuzhu_z" />
   <meta name="twitter:title" content="Yuzhu Zhang — Data Product Consultant & AI Enablement" />
   <meta name="twitter:description" content="Helping teams adopt AI tools, build data fluency, and turn data into useful products. Based in Berlin." />
 
-  <!-- Structured data -->
+  <link rel="canonical" href="https://yuzhuz.github.io" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,9 +26,9 @@
     "name": "Yuzhu Zhang",
     "url": "https://yuzhuz.github.io",
     "email": "yuzhu.zhang@outlook.de",
-    "jobTitle": "Data Product Consultant & AI Enablement Practitioner",
-    "description": "Helping teams adopt AI tools, build data fluency, and turn data into useful products.",
-    "knowsAbout": ["Data Product Management", "AI Enablement", "Product Strategy", "Data Fluency", "Workshops"],
+    "jobTitle": "Senior Data Product Manager & Consultant",
+    "description": "Data product consultant and AI enablement practitioner based in Berlin. 7+ years across advertising, pricing, and data products.",
+    "knowsAbout": ["Data Product Management", "AI Enablement", "Product Strategy", "Databricks", "Advertising Data", "Dynamic Pricing", "Machine Learning Products"],
     "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" },
     "sameAs": [
       "https://www.linkedin.com/in/yuzhuzhang/",
@@ -48,73 +46,220 @@
     "description": "Data product consulting and AI enablement for teams in Berlin and remotely.",
     "founder": { "@id": "https://yuzhuz.github.io/#person" },
     "areaServed": ["Berlin", "Germany", "Remote"],
-    "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" },
-    "knowsAbout": ["Data Product Management", "AI Enablement", "Product Strategy", "Workshops"]
+    "address": { "@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE" }
   }
   </script>
 
-  <link rel="canonical" href="https://yuzhuz.github.io" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-lighter);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .home-section { margin-bottom: 56px; }
+    .home-section h2 {
+      font-family: var(--font);
+      font-size: 1.3rem;
+      font-weight: normal;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .home-section p { margin-bottom: 16px; color: var(--text); }
+    .role-block {
+      border-left: 3px solid var(--border);
+      padding: 14px 20px;
+      margin: 16px 0;
+      background: #fafafa;
+    }
+    .role-block strong {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .role-block p { font-size: 16px; color: var(--text-light); margin: 0; }
+    .interest-list { list-style: none; margin: 0; }
+    .interest-list li {
+      display: flex;
+      gap: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+    }
+    .interest-list li:last-child { border-bottom: none; }
+    .interest-label {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+      min-width: 160px;
+      flex-shrink: 0;
+    }
+    .interest-body { color: var(--text-light); }
+    .offering-list { list-style: none; margin: 0; }
+    .offering-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+      color: var(--text);
+    }
+    .offering-list li:last-child { border-bottom: none; }
+    .offering-list strong {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .offering-list span { color: var(--text-light); font-size: 15px; }
+    .contact-block {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 2.2;
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <nav>
-      <span class="site-name">Yuzhu Zhang</span>
+      <a href="index.html" class="site-name">Yuzhu Zhang</a>
       <div class="nav-links">
         <a href="index.html" class="active">Home</a>
-        <a href="blog.html">Writing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+
+    <section class="hero" style="margin-bottom: 56px;">
       <h1>Yuzhu Zhang <span class="chinese-name">张语竹 <span class="pronunciation">[Jahng Yew-Joo]</span></span></h1>
-      <p class="tagline">Data Product & AI Enablement · Berlin · Helping teams build better products with data and AI</p>
+      <p class="tagline">Senior Data PM · AI Enablement · Berlin · Helping teams build better products with data and AI</p>
     </section>
 
-    <section class="about">
-      <h2>About me</h2>
+    <section class="home-section">
+      <span class="eyebrow">Current role</span>
+      <h2>What I do</h2>
       <p>
-        I studied sociology and political science, which means I've always been more interested in
-        <em>why</em> people do things than in the systems they build to do them. I've worked across
-        advertising, logistics, and pricing — as a revenue manager, analyst, and product manager —
-        before specialising in data product management. These days I work as a Senior Data Product Manager
-        at <a href="https://www.kleinanzeigen.de" target="_blank" rel="noopener">Kleinanzeigen.de</a>
-        in Berlin, where I help teams turn messy data problems into useful products.
+        I'm a Senior Data Product Manager at <a href="https://www.kleinanzeigen.de" target="_blank" rel="noopener">Kleinanzeigen.de</a>,
+        one of Germany's largest classifieds marketplaces. I work across two B2C domains:
+      </p>
+
+      <div class="role-block">
+        <strong>Advertising — 1P ad formats</strong>
+        <p>Leading a topic team to develop and launch first-party advertising formats. Partnering with analytics and ad sales to assess format performance and deliver data-backed recommendations.</p>
+      </div>
+
+      <div class="role-block">
+        <strong>Pro — data products for professional sellers</strong>
+        <p>Supporting data and analytics for five Pro squads — real estate agents, car dealers, and commercial listers. Helping teams define metrics, build documentation, and adopt AI tools.</p>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <span class="eyebrow">Background</span>
+      <h2>Where I come from</h2>
+      <p>
+        7+ years across digital advertising, data products, pricing, and personalisation.
+        Before specialising in product management, I was a pricing analyst at Delivery Hero
+        and an advertising yield manager at eBay Kleinanzeigen — which means I understand
+        data from the analyst side as well as the product side.
       </p>
       <p>
-        Alongside my day job, I take on data product consulting and AI enablement engagements —
-        helping teams adopt AI tools and workflows, build data fluency, and get more value from the
-        data they already have. I also run workshops on product strategy and practical AI for
-        non-technical teams. I write about what I'm learning in practice: the frameworks, the
-        failures, and what actually changes when you take AI seriously as a working tool.
-      </p>
-      <p>
-        Outside of work: hiking, reading (novels, psychology, philosophy), and spending time with my family
-        and two-year-old daughter in Berlin.
+        I'm fluent in Mandarin, German, and English — and I hold degrees from Hertie School
+        of Governance (Master of Public Policy), Humboldt University Berlin (Social Science),
+        and Beijing Foreign Studies University (German Studies).
       </p>
     </section>
 
-    <section class="recent-writing">
-      <h2>Writing</h2>
-      <article class="post-item">
-        <span class="post-date">2026-05-22</span>
-        <h3><a href="posts/github-pages-team-docs-ai.html">How to build a GitHub Pages site for team docs with AI</a></h3>
-        <p class="post-excerpt">How I built a documentation hub for my data team in 30 minutes using Claude Code — including real automation examples.</p>
-      </article>
-      <p><a href="blog.html">All posts →</a></p>
-    </section>
-
-    <section class="connect">
-      <h2>Connect</h2>
-      <ul class="connect-links">
-        <li><a href="https://www.linkedin.com/in/yuzhuzhang/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://x.com/yuzhu_z" target="_blank" rel="noopener">X</a></li>
-        <li><a href="mailto:yuzhu.zhang@outlook.de">yuzhu.zhang@outlook.de</a></li>
+    <section class="home-section">
+      <span class="eyebrow">Interests</span>
+      <h2>What I'm thinking about</h2>
+      <ul class="interest-list">
+        <li>
+          <span class="interest-label">AI as a working tool</span>
+          <span class="interest-body">What actually changes when you treat AI as a colleague, not a search engine</span>
+        </li>
+        <li>
+          <span class="interest-label">Data fluency</span>
+          <span class="interest-body">How non-technical teams can work more confidently with data without becoming analysts</span>
+        </li>
+        <li>
+          <span class="interest-label">Documentation that lives</span>
+          <span class="interest-body">Why most team documentation fails and how to build systems that stay current</span>
+        </li>
+        <li>
+          <span class="interest-label">Meaning and work</span>
+          <span class="interest-body">What a good working life looks like when AI is reshaping what work means</span>
+        </li>
       </ul>
     </section>
+
+    <section class="home-section">
+      <span class="eyebrow">Consulting</span>
+      <h2>What I offer</h2>
+      <ul class="offering-list">
+        <li>
+          <strong>Data product strategy</strong>
+          <span>Metric definitions, roadmaps, stakeholder alignment — turning ambiguous data problems into structured products</span>
+        </li>
+        <li>
+          <strong>AI enablement</strong>
+          <span>Practical adoption of AI tools: Claude Code, Databricks AI features, workflow automation for data teams</span>
+        </li>
+        <li>
+          <strong>Product strategy workshops</strong>
+          <span>For data teams and cross-functional groups who need to align on what to build and why</span>
+        </li>
+        <li>
+          <strong>Data fluency coaching</strong>
+          <span>Helping non-technical PMs and business stakeholders work more effectively with data and analysts</span>
+        </li>
+      </ul>
+      <p style="margin-top: 16px; font-size: 15px; color: var(--text-lighter); font-family: var(--font-sans);">
+        Based in Berlin · available remotely
+      </p>
+    </section>
+
+    <section class="home-section">
+      <span class="eyebrow">Writing</span>
+      <h2>Recent posts</h2>
+      <div class="post-list">
+        <article class="post-item">
+          <span class="post-date">2026-05-22</span>
+          <h3 style="font-family: var(--font); font-size: 1.1rem; font-weight: normal; margin-bottom: 6px;">
+            <a href="posts/github-pages-team-docs-ai.html">How to build a GitHub Pages site for team docs with AI</a>
+          </h3>
+          <p class="post-excerpt">How I replaced Confluence with a GitHub Pages site in 30 minutes using Claude Code — including real automation examples.</p>
+        </article>
+      </div>
+      <p style="margin-top: 20px; font-family: var(--font-sans); font-size: 15px;">
+        <a href="blog.html">All posts →</a>
+      </p>
+    </section>
+
+    <section class="home-section">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact</h2>
+      <div class="contact-block">
+        <div><a href="mailto:yuzhu.zhang@outlook.de">yuzhu.zhang@outlook.de</a></div>
+        <div><a href="https://www.linkedin.com/in/yuzhuzhang/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div><a href="https://x.com/yuzhu_z" target="_blank" rel="noopener">X / Twitter</a></div>
+      </div>
+    </section>
+
   </main>
 
   <footer>

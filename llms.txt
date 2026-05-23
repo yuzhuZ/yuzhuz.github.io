@@ -4,8 +4,10 @@
 
 ## Pages
 
-- [Home](https://yuzhuz.github.io/): About Yuzhu — background, consulting services, recent writing
-- [Writing](https://yuzhuz.github.io/blog.html): Articles on data product management, AI tools, and working practices
+- [Home](https://yuzhuz.github.io/): Background, consulting services, interests, recent writing
+- [About](https://yuzhuz.github.io/about.html): Career background, education, personal philosophy
+- [Portfolio](https://yuzhuz.github.io/portfolio.html): Data product and AI enablement case studies (coming soon)
+- [Blog](https://yuzhuz.github.io/blog.html): Articles on data product management, AI tools, and working practices
 
 ## Posts
 
@@ -17,5 +19,7 @@
 - Services: data product consulting, AI enablement, product strategy workshops
 - Background: advertising, logistics, pricing — revenue manager, analyst, product manager
 - Current role: Senior Data Product Manager at Kleinanzeigen.de
+- Education: Hertie School of Governance (MPP), Humboldt University Berlin, Beijing Foreign Studies University
+- Languages: Mandarin, German, English
 - Contact: yuzhu.zhang@outlook.de
 - LinkedIn: https://www.linkedin.com/in/yuzhuzhang/
