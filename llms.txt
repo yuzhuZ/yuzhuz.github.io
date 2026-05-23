@@ -1,0 +1,21 @@
+# Yuzhu Zhang
+
+> Data product consultant and AI enablement practitioner based in Berlin. Helps teams adopt AI tools, build data fluency, and turn data into useful products.
+
+## Pages
+
+- [Home](https://yuzhuz.github.io/): About Yuzhu — background, consulting services, recent writing
+- [Writing](https://yuzhuz.github.io/blog.html): Articles on data product management, AI tools, and working practices
+
+## Posts
+
+- [How to build a GitHub Pages site for team docs with AI](https://yuzhuz.github.io/posts/github-pages-team-docs-ai.html): How to replace Confluence with a GitHub Pages site in 30 minutes using Claude Code, including real automation examples (Google Sheet sync, Slack integration)
+
+## Key facts
+
+- Based in Berlin, Germany
+- Services: data product consulting, AI enablement, product strategy workshops
+- Background: advertising, logistics, pricing — revenue manager, analyst, product manager
+- Current role: Senior Data Product Manager at Kleinanzeigen.de
+- Contact: yuzhu.zhang@outlook.de
+- LinkedIn: https://www.linkedin.com/in/yuzhuzhang/

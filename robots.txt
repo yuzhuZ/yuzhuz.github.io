@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# AI search crawlers — explicitly allowed for visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://yuzhuz.github.io/sitemap.xml
